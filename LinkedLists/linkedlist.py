@@ -52,7 +52,7 @@ class LinkedList:
 
     def remove(self, index):
         if index >= self.length():
-            print("ERROR: 'Erase' Index out of range!")
+            print("ERROR: 'Remove' Index out of range!")
             return
         curr_idx = 0
         curr_node = self.head
