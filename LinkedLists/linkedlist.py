@@ -10,6 +10,15 @@ class LinkedList:
     def __init__(self):
         self.head = Node()
 
+    def __repr__(self):
+        curr_node = self.head
+        nodes = []
+        while curr_node is not None:
+            nodes.append(curr_node.data)
+            curr_node = curr_node.next
+        nodes.append("None")
+        return " -> ".join(nodes)
+
     def search_list(self, key):
         curr = self.head
         while curr and curr.data != key:
